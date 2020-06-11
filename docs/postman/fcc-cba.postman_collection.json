@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "d2a9b996-0d04-43d4-a82b-d23461443082",
+		"name": "fcc-cba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{firebase}}/files",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "doc",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "{{firebase}}/files?filename=menu.png",
+					"host": [
+						"{{firebase}}"
+					],
+					"path": [
+						"files"
+					],
+					"query": [
+						{
+							"key": "filename",
+							"value": "menu.png"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
